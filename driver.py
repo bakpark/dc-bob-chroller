@@ -1,11 +1,10 @@
 from selenium import webdriver
-from src import DirPath
 from src import Constant
-
+from selenium.webdriver.common.by import By
 
 class IDriver:
-    def __init__(self):
-        self.driver = webdriver.Chrome(DirPath.chromeDriverPath)
+    def __init__(self, chromeDriverPath):
+        self.driver = webdriver.Chrome(chromeDriverPath)
         self.driver.maximize_window()
 
     def movePage(self,url):
@@ -18,6 +17,9 @@ class IDriver:
             except:
                 self.wait(Constant.DEFAULT_WAIT_TIME)
         return None
+
+    def getPageSource(self):
+        return self.driver.page_source
 
     def existElement(self, Xpath):
         if self.findElement(Xpath) is None:
@@ -49,16 +51,6 @@ class IElement:
     def click(self):
         self.element.click()
 
-    def getTitle(self):
-        txt = self.element.text
-        ret = ""
-        notAllowedCharacter = ['?','!','<','/','>','\\','|','*','\"','♥']
-        for c in txt:
-            if c in notAllowedCharacter:
-                pass
-            else:
-                ret += c
-        return ret
 
     def getText(self):
         return self.element.text
