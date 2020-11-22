@@ -58,12 +58,12 @@ class Controller:
         emptyElement.click()
 
         downloadList = []
-        for imageIndex in range(1,20):
+        for imageIndex in range(1,50):
             if(self.driver.notExistElement(Xpath.saveBtn%imageIndex)): break
             saveBtn = self.driver.findElement(Xpath.saveBtn%imageIndex)
             saveBtn.click()
 
-            downloadFileName = saveBtn.getText().replace('~','_')
+            downloadFileName = saveBtn.getText().replace('~','_').replace('+',' ')
             downloadList.append(downloadFileName)
 
         post.downloadList = downloadList

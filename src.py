@@ -30,3 +30,5 @@ class Constant:
     POST_LIST_COUNT = 50
     NOT_ALLOWED_CHARACTERS = ['?', '!', '<', '/', '>', '\\', '|', '*', '\"', '♥','✅','❤','★',':','.']
 
+    START_POST_NUMBER = 2790
+    END_POST_NUMBER = 2890
