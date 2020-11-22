@@ -1,0 +1,6 @@
+[done] https://gall.dcinside.com/mgallery/board/lists/?id=rlatjsdn&exception_mode=recommend&page=1 게시글 목록 chrolling 완료
+[done] https://gall.dcinside.com/mgallery/board/lists/?id=rlatjsdn&exception_mode=recommend&page=2 게시글 목록 chrolling 완료
+[done] https://gall.dcinside.com/mgallery/board/lists/?id=rlatjsdn&exception_mode=recommend&page=3 게시글 목록 chrolling 완료
+[done] [2809] 프필 미공개컷(ㅌㄱㅈㅈㅇ) 게시글 chrolling
+[done] [2809] 프필 미공개컷(ㅌㄱㅈㅈㅇ) html 빌드 완료
+[END]  [2809] 프필 미공개컷(ㅌㄱㅈㅈㅇ) 상태 :PostStatus.END_MAKING_HTML

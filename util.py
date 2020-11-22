@@ -87,9 +87,3 @@ class HtmlBuilder:
         self.f.write("</body></html>")
         self.f.close()
         self.logger.print("[done] "+self.title+" html 빌드 완료")
-
-
-class Mode(Enum):
-    EXIST_PASS = 1
-    ALL_DOWNLOAD = 2
-    SELECT_RANGE = 3

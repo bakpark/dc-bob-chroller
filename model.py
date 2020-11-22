@@ -9,18 +9,18 @@ class PostList:
     def addPost(self, post):
         self.posts.append(post)
 
-    def getPostsInRange(self):
+    def getPostsInRange(self, st, en):
         retPosts = []
         for post in self.posts:
-            if int(post.number)<Constant.START_POST_NUMBER or int(post.number)>Constant.END_POST_NUMBER:
+            if int(post.number)<st or int(post.number)>en:
                 continue
             retPosts.append(post)
         return retPosts
 
-    def needToContinue(self):
+    def needToContinue(self, st):
         if len(self.posts) == 0: return False
         firstPost = self.posts[(len(self.posts)-1)]
-        return not (int(firstPost.number) <= max(Constant.POST_LIST_COUNT ,Constant.START_POST_NUMBER))
+        return not (int(firstPost.number) <= max(Constant.POST_LIST_COUNT , st))
 
 
 class Post:

@@ -14,13 +14,14 @@ class Xpath:
     saveBtn = "//ul[@class='appending_file']/li[%d]/a"
 
 class DirPath:
-    chromeDriverPath = r"C:\Users\park\Downloads\chromedriver_win32\chromedriver.exe"
-    saveDirPath = "C:\\Users\\park\\PycharmProjects\\dc-bob-chroller\\save\\"
     downloadDirPath = "C:\\Users\\park\\downloads\\"
+    saveDirPath = "C:\\Users\\park\\PycharmProjects\\dc-bob-chroller\\save\\"
+    chromeDriverPath = r"C:\Users\park\Downloads\chromedriver_win32\chromedriver.exe"
 
 
 class Url:
-    pageRecommendUrl = "https://gall.dcinside.com/mgallery/board/lists/?id=rlatjsdn&page=%d&exception_mode=recommend"
+    pageUrl = ""
+    pageRecommendUrl = "https://gall.dcinside.com/mgallery/board/lists/?id=rlatjsdn&exception_mode=recommend&page=%d"
     pageNormalUrl = "https://gall.dcinside.com/mgallery/board/lists/?id=rlatjsdn&page=%d"
     postUrlPrefixs = 'https://gall.dcinside.com'
 
@@ -29,6 +30,3 @@ class Constant:
     DEFAULT_WAIT_TIME = 0.5
     POST_LIST_COUNT = 50
     NOT_ALLOWED_CHARACTERS = ['?', '!', '<', '/', '>', '\\', '|', '*', '\"', '♥','✅','❤','★',':','.']
-
-    START_POST_NUMBER = 2790
-    END_POST_NUMBER = 2890

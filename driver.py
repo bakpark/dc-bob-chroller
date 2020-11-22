@@ -1,6 +1,5 @@
 from selenium import webdriver
 from src import Constant
-from selenium.webdriver.common.by import By
 
 class IDriver:
     def __init__(self, chromeDriverPath):

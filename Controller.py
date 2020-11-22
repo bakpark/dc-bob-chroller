@@ -1,6 +1,6 @@
 from driver import IDriver
 from bs4 import BeautifulSoup
-from util import FileManager, HtmlBuilder
+from util import FileManager, HtmlBuilder, Logger
 from src import DirPath, Xpath, Url
 from model import Post, PostList, PostStatus
 
@@ -8,10 +8,14 @@ class Controller:
     def __exit__(self):
         self.driver.closeDriver()
 
-    def __init__(self, logger):
-        self.driver = IDriver(DirPath.chromeDriverPath)
-        self.fm = FileManager(DirPath.saveDirPath, DirPath.downloadDirPath, logger)
-        self.logger = logger
+    def __init__(self, setting):
+        try:
+            self.logger = Logger(setting.saveDirPath)
+            self.fm = FileManager(setting.saveDirPath, setting.downloadDirPath, self.logger)
+            self.driver = IDriver(setting.chromeDriverPath)
+            self.setting = setting
+        except:
+            raise('[error] setting is not valid')
 
 
     def chrollPostList(self, postListUrl):
@@ -27,6 +31,25 @@ class Controller:
         self.logger.print('[done] ' + postListUrl +' 게시글 목록 chrolling 완료')
         return postList
 
+    def chrollInRange(self, startPostNumber, endPostNumber):
+        for pageIdx in range(1, 1000):
+            postList = self.chrollPostList(self.setting.getPageUrl() % pageIdx)
+            postsInRange = postList.getPostsInRange(startPostNumber, endPostNumber)
+            for post in postsInRange:
+                if self.setting.passExistFile and post.status == PostStatus.ALREADY_EXIST: continue
+                self.chrollPost(post)
+
+            for post in postsInRange:
+                if post.status == PostStatus.END_CHROLLING:
+                    self.moveImages(post)
+
+                if post.status == PostStatus.END_MOVING_IMAGES:
+                    self.makeHtml(post)
+
+                self.logger.print('[END]  ' + post.getTitle() + ' 상태 :' + str(post.status))
+
+            if not postList.needToContinue(startPostNumber):
+                break
 
     def _initPost(self, trElement):
         aTagElement = trElement.find('td',attrs={'class':'gall_tit ub-word'}).find('a')
@@ -95,8 +118,9 @@ class Controller:
         imgTagElementsList = post.bodySoup.find_all('img')
         tagListSize = len(imgTagElementsList)
         downloadImgSize = len(post.downloadList)
-        if tagListSize != downloadImgSize:
-            self.logger.error('[error] img tag의 숫자와 download img 갯수가 다름')
+        # if tagListSize != downloadImgSize:
+        #     self.logger.error('[error] img tag의 갯수(%d)와 download img 갯수(%d)가 다름'%(tagListSize,downloadImgSize))
+        # dc 이모티콘으로 인해 img 갯수가 많을 수 있습니다
         for i in range(downloadImgSize):
             filePath = './'+post.getTitle()+'/'+post.downloadList[i]
             element = imgTagElementsList[i]
