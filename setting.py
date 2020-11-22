@@ -15,19 +15,19 @@ class Setting:
                , saveDirPath = 'C:/Users/park/PycharmProjects/dc-bob-chroller/save/'
                , chromeDriverPath = 'C:/Users/park/Downloads/chromedriver_win32/chromedriver.exe'
                , passExistFile = True
+               , initSetting = True
                ):
         self.postListUrl = postListUrl
         self.recommend = recommend
-        self.downloadDirPath = downloadDirPath
-        self.saveDirPath = saveDirPath
+        self.downloadDirPath = downloadDirPath.rstrip('/')+'/'
+        self.saveDirPath = saveDirPath.rstrip('/')+'/'
         self.chromeDriverPath = chromeDriverPath
         self.passExistFile = passExistFile
 
         settingFilePath = os.curdir + '/settings.txt'
-        if not os.path.exists(settingFilePath):
-            self.writeSettings()
-        else:
+        if os.path.exists(settingFilePath) and initSetting:
             self.setSettings(self.readSettings())
+        self.save()
 
     def readSettings(self):
         settingFilePath = os.curdir + '/settings.txt'
@@ -57,14 +57,11 @@ class Setting:
         self.chromeDriverPath = sts[4]
         self.passExistFile = bool(sts[5])
 
+    def save(self):
+        self.writeSettings()
+
     def getPageUrl(self):
         return self.postListUrl+('&exception_mode=recommend' if self.recommend else '')+'&page=%d'
 
-    def setMode(self, mode, st=1, en=100000):
-        # todo
-        pass
-
-
-class Mode(Enum):
-    # todo
-    pass
+    def __str__(self):
+        return 'postListUrl '+self.postListUrl+'\n'+'recommend '+str(self.recommend)+'\n'+'downloadDirPath '+self.downloadDirPath+'\nsaveDirPath '+self.saveDirPath+'\nchromeDriverPath '+self.chromeDriverPath+'\npassExistFile '+str(self.passExistFile)+'\n'

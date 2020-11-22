@@ -1,6 +1,0 @@
-https://gall.dcinside.com/mgallery/board/lists/?id=rlatjsdn
-True
-C:/Users/park/downloads/
-C:/Users/park/PycharmProjects/dc-bob-chroller/save/
-C:/Users/park/Downloads/chromedriver_win32/chromedriver.exe
-True

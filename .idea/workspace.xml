@@ -4,13 +4,44 @@
     <list default="true" id="d30ecf8b-ef2a-4625-a7dd-c2665225c00e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/Analysis-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/EXE-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/PKG-00.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/PKG-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/PYZ-00.pyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/PYZ-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/home.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/warn-home.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/xref-home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/home.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/settings.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/[2809] 프필 미공개컷(ㅌㄱㅈㅈㅇ).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/[2809] 프필 미공개컷(ㅌㄱㅈㅈㅇ)/3BA6359F-C106-4176-BFED-07CDFF0156F6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/[2809] 프필 미공개컷(ㅌㄱㅈㅈㅇ)/B3176D68-D9B9-45F0-BBEA-44E0ABB4203D.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/[2809] 프필 미공개컷(ㅌㄱㅈㅈㅇ)/D83918DB-D5F8-41EC-9116-E0C5392A309D.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/[2809] 프필 미공개컷(ㅌㄱㅈㅈㅇ)/E7ED4E67-C9CE-4D9C-AF8A-18498A52EA6A.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/log/2020-11-23 002315.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src.py" beforeDir="false" afterPath="$PROJECT_DIR$/src.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/dc-bob-chroller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/build/home/Analysis-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/build/home/EXE-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/build/home/PKG-00.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/build/home/PKG-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/build/home/PYZ-00.pyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/build/home/PYZ-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/build/home/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/build/home/home.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/build/home/warn-home.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/build/home/xref-home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/home.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/settings.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,28 +82,7 @@
       <recent name="C:\Users\park\PycharmProjects\dc-bob-chroller\view" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app">
-    <configuration name="Controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="dc-bob-chroller" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Controller.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.dc-bob-chroller">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dc-bob-chroller" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,7 +95,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/view/app.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\park\PycharmProjects\dc-bob-chroller\view\dc-bob-chroller.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,6 +117,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/view/convert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dc-bob-chroller" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dc-bob-chroller" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/view" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/view/dc-bob-chroller.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dc-bob-chroller" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.runner" />
         <item itemvalue="Python.convert" />
         <item itemvalue="Python.init" />
-        <item itemvalue="Python.Controller" />
       </list>
     </recent_temporary>
   </component>
@@ -197,38 +228,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="207" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605973508508" />
-    <state width="1069" height="266" key="GridCell.Tab.0.bottom" timestamp="1606058341515">
+    <state width="1895" height="265" key="GridCell.Tab.0.bottom" timestamp="1606062971240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1069" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606058341515" />
-    <state width="1069" height="266" key="GridCell.Tab.0.center" timestamp="1606058341515">
+    <state width="1895" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606062971240" />
+    <state width="1895" height="265" key="GridCell.Tab.0.center" timestamp="1606062971240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1069" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606058341515" />
-    <state width="1069" height="266" key="GridCell.Tab.0.left" timestamp="1606058341515">
+    <state width="1895" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606062971240" />
+    <state width="1895" height="265" key="GridCell.Tab.0.left" timestamp="1606062971240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1069" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606058341515" />
-    <state width="1069" height="266" key="GridCell.Tab.0.right" timestamp="1606058341515">
+    <state width="1895" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606062971240" />
+    <state width="1895" height="265" key="GridCell.Tab.0.right" timestamp="1606062971240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1069" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606058341515" />
-    <state width="1058" height="334" key="GridCell.Tab.1.bottom" timestamp="1606056017924">
+    <state width="1895" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606062971240" />
+    <state width="1895" height="337" key="GridCell.Tab.1.bottom" timestamp="1606061251978">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1058" height="334" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606056017924" />
-    <state width="1058" height="334" key="GridCell.Tab.1.center" timestamp="1606056017924">
+    <state width="1895" height="337" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606061251978" />
+    <state width="1895" height="337" key="GridCell.Tab.1.center" timestamp="1606061251977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1058" height="334" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606056017924" />
-    <state width="1058" height="334" key="GridCell.Tab.1.left" timestamp="1606056017924">
+    <state width="1895" height="337" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606061251977" />
+    <state width="1895" height="337" key="GridCell.Tab.1.left" timestamp="1606061251977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1058" height="334" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606056017924" />
-    <state width="1058" height="334" key="GridCell.Tab.1.right" timestamp="1606056017924">
+    <state width="1895" height="337" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606061251977" />
+    <state width="1895" height="337" key="GridCell.Tab.1.right" timestamp="1606061251977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1058" height="334" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606056017924" />
+    <state width="1895" height="337" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606061251977" />
     <state x="514" y="179" width="875" height="663" key="recent.locations.popup" timestamp="1606017762810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

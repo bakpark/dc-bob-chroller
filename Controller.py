@@ -1,7 +1,7 @@
 from driver import IDriver
 from bs4 import BeautifulSoup
 from util import FileManager, HtmlBuilder, Logger
-from src import DirPath, Xpath, Url
+from src import Xpath, Url
 from model import Post, PostList, PostStatus
 
 class Controller:
@@ -59,7 +59,7 @@ class Controller:
         url = aTagElement['href']
 
         post = Post(url=url, number=postNumber, title=title)
-        if self.fm.existFile(DirPath.saveDirPath+post.getTitle()+'.html'):
+        if self.fm.existFile(self.setting.saveDirPath+post.getTitle()+'.html'):
             post.status = PostStatus.ALREADY_EXIST
         else:
             post.status = PostStatus.END_INITIALIZING
@@ -105,7 +105,7 @@ class Controller:
 
     def makeHtml(self, post):
         try:
-            hb = HtmlBuilder(DirPath.saveDirPath, post.getTitle(), post.writingTime, self.logger)
+            hb = HtmlBuilder(self.setting.saveDirPath, post.getTitle(), post.writingTime, self.logger)
             self._mappingAttributes2SaveImages(post)
             hb.writeBody(str(post.bodySoup))
             hb.writeReply(str(post.replySoup))

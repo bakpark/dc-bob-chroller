@@ -108,7 +108,7 @@ class Ui_MainWindow(object):
         self.group2Box.setTitle(_translate("MainWindow", "선택 지정 모드"))
         self.group2Box.pushButton.setText(_translate("MainWindow", "시작"))
 
-        setting = Setting()
+        setting = Setting(initSetting=True)
         self.textEdits[0].setText(setting.postListUrl)
         self.textEdits[1].setText(setting.downloadDirPath)
         self.textEdits[2].setText(setting.saveDirPath)
@@ -131,12 +131,22 @@ class Ui_MainWindow(object):
         saveDirPath = self.textEdits[2].toPlainText().strip()
         chromeDriverPath = self.textEdits[3].toPlainText().strip()
         passExistFile = self.radioButton.isChecked()
-        setting = Setting(postListUrl, recommend, downloadDirPath, saveDirPath, chromeDriverPath, passExistFile)
+        setting = Setting(
+            postListUrl=postListUrl,
+            recommend=recommend,
+            downloadDirPath=downloadDirPath,
+            saveDirPath=saveDirPath,
+            chromeDriverPath=chromeDriverPath,
+            passExistFile=passExistFile,
+            initSetting=False
+        )
+        setting.save()
         controller = Controller(setting)
 
         st = int(self.group1Box.textEdits[0].toPlainText().strip())
         en = int(self.group1Box.textEdits[1].toPlainText().strip())
         controller.chrollInRange(st,en)
+        controller.__exit__()
 
 
 

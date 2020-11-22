@@ -13,16 +13,8 @@ class Xpath:
     fileCntBox = "//div[ @class ='appending_file_box']/strong/em"
     saveBtn = "//ul[@class='appending_file']/li[%d]/a"
 
-class DirPath:
-    downloadDirPath = "C:\\Users\\park\\downloads\\"
-    saveDirPath = "C:\\Users\\park\\PycharmProjects\\dc-bob-chroller\\save\\"
-    chromeDriverPath = r"C:\Users\park\Downloads\chromedriver_win32\chromedriver.exe"
-
 
 class Url:
-    pageUrl = ""
-    pageRecommendUrl = "https://gall.dcinside.com/mgallery/board/lists/?id=rlatjsdn&exception_mode=recommend&page=%d"
-    pageNormalUrl = "https://gall.dcinside.com/mgallery/board/lists/?id=rlatjsdn&page=%d"
     postUrlPrefixs = 'https://gall.dcinside.com'
 
 class Constant:

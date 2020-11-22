@@ -37,6 +37,7 @@ class IDriver:
 
     def closeDriver(self):
         self.driver.close()
+        self.driver.quit()
 
     def excecuteScriptToElement(self, script, element):
         return self.driver.execute_script(script, element.element)
