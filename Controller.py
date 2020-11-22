@@ -63,7 +63,7 @@ class Controller:
             saveBtn = self.driver.findElement(Xpath.saveBtn%imageIndex)
             saveBtn.click()
 
-            downloadFileName = saveBtn.getText()
+            downloadFileName = saveBtn.getText().replace('~','_')
             downloadList.append(downloadFileName)
 
         post.downloadList = downloadList

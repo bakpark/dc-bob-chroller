@@ -28,5 +28,5 @@ class Constant:
     MAX_TRY_COUNT = 3
     DEFAULT_WAIT_TIME = 0.5
     POST_LIST_COUNT = 50
-    NOT_ALLOWED_CHARACTERS = ['?', '!', '<', '/', '>', '\\', '|', '*', '\"', '♥','✅','❤','★']
+    NOT_ALLOWED_CHARACTERS = ['?', '!', '<', '/', '>', '\\', '|', '*', '\"', '♥','✅','❤','★',':','.']
 
