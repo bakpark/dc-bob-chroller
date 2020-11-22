@@ -24,6 +24,8 @@ class Logger:
         with open(self.errorLogFilePath, mode='a', encoding='utf-8') as ef:
             ef.write(str+'\n')
 
+    def debug(self, str):
+        self.print('-[DEBUG] '+str)
 
 class FileManager:
     def __init__(self, saveDirPath, downloadDirPath, logger):

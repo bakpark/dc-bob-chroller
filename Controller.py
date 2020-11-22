@@ -5,6 +5,9 @@ from src import DirPath, Xpath, Url
 from model import Post, PostList, PostStatus
 
 class Controller:
+    def __exit__(self):
+        self.driver.closeDriver()
+
     def __init__(self, logger):
         self.driver = IDriver(DirPath.chromeDriverPath)
         self.fm = FileManager(DirPath.saveDirPath, DirPath.downloadDirPath, logger)
@@ -64,17 +67,17 @@ class Controller:
             downloadList.append(downloadFileName)
 
         post.downloadList = downloadList
-        post.status = PostStatus(1)
-        self.logger.print('[done]'+post.getTitle()+' 게시글 chrolling')
+        post.status = PostStatus.END_CHROLLING
+        self.logger.print('[done] '+post.getTitle()+' 게시글 chrolling')
 
     def moveImages(self, post):
         try:
             post.imgList = []
             for file in post.downloadList:
                 post.imgList.append(self.fm.moveFile2SaveDirectory(post.getTitle(), file))
-            post.status = PostStatus(2)
+            post.status = PostStatus.END_MOVING_IMAGES
         except:
-            self.logger.error('[error]'+post.getTitle()+' image 파일 옮기는 과정에서 에러남')
+            self.logger.error('[error] '+post.getTitle()+' image 파일 옮기는 과정에서 에러남')
 
 
     def makeHtml(self, post):
@@ -84,9 +87,9 @@ class Controller:
             hb.writeBody(str(post.bodySoup))
             hb.writeReply(str(post.replySoup))
             hb.close()
-            post.status = PostStatus(3)
+            post.status = PostStatus.END_MAKING_HTML
         except:
-            self.logger.error('[error]'+post.getTitle()+' html 빌드 과정에서 에러남')
+            self.logger.error('[error] '+post.getTitle()+' html 빌드 과정에서 에러남')
 
     def _mappingAttributes2SaveImages(self, post):
         imgTagElementsList = post.bodySoup.find_all('img')

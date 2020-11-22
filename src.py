@@ -20,8 +20,8 @@ class DirPath:
 
 
 class Url:
-    pageRecommendUrl = "https:/gall.dcinside.com/mgallery/board/lists/?id=ahnhyungsub&page=%d&exception_mode=recommend"
-    pageNormalUrl = "https:/gall.dcinside.com/mgallery/board/lists/?id=ahnhyungsub&page=%d"
+    pageRecommendUrl = "https://gall.dcinside.com/mgallery/board/lists/?id=rlatjsdn&page=%d&exception_mode=recommend"
+    pageNormalUrl = "https://gall.dcinside.com/mgallery/board/lists/?id=rlatjsdn&page=%d"
     postUrlPrefixs = 'https://gall.dcinside.com'
 
 class Constant:
