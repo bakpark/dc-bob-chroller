@@ -18,7 +18,8 @@ class PostList:
         return retPosts
 
     def needToContinue(self):
-        firstPost = self.posts[len(self.posts)-1]
+        if len(self.posts) == 0: return False
+        firstPost = self.posts[(len(self.posts)-1)]
         return not (int(firstPost.number) <= max(Constant.POST_LIST_COUNT ,Constant.START_POST_NUMBER))
 
 

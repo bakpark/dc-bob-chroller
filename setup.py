@@ -10,15 +10,17 @@ def long_description():
 
 print (find_packages())
 
-setup(name='test',
+setup(name='Bob Chroller',
       version='0.1',
-      description='test python',
+      description='DC Inside Chroller',
       url='https://github.com/bakpark/dc-bob-chroller',
       author='bakpark',
       author_email='bakparkbj@gmail.com',
       packages=find_packages(),
       install_requires=[
-        "selenium"
+        "selenium",
+        "bs4",
+        "PyQt5"
       ],
       classifiers=[
           'Programming Language :: Python :: 3.6',

@@ -93,21 +93,15 @@ class Controller:
 
     def _mappingAttributes2SaveImages(self, post):
         imgTagElementsList = post.bodySoup.find_all('img')
-        idx = 0
-        for filePath in post.imgList:
-            while True:
-                try:
-                    str(imgTagElementsList[idx]["style"])
-                    break
-                except IndexError:
-                    break
-                except:
-                    idx += 1
+        tagListSize = len(imgTagElementsList)
+        downloadImgSize = len(post.downloadList)
+        if tagListSize != downloadImgSize:
+            self.logger.error('[error] img tag의 숫자와 download img 갯수가 다름')
+        for i in range(downloadImgSize):
+            filePath = './'+post.getTitle()+'/'+post.downloadList[i]
+            element = imgTagElementsList[i]
+            element['alt'] = ''
+            element['onclick'] = ''
+            element['src'] = filePath
 
-            try:
-                imgTagElementsList[idx]["src"] = filePath
-                imgTagElementsList[idx]["onclick"] = ""
-                imgTagElementsList[idx]["alt"] = ""
-                idx += 1
-            except:
-                pass
+
